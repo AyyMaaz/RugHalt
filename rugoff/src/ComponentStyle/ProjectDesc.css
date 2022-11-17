@@ -1,0 +1,146 @@
+.desc {
+    font-family: 'Silkscreen', cursive;
+    margin-top: 2%;
+}
+
+.desc .bannerImage {
+    margin-top: 2%;
+    max-width: 100%;
+
+}
+
+.desc h1 {
+    font-family: 'Averia Serif Libre', cursive;
+    color: aliceblue;
+    margin-top: 2%;
+}
+
+.desc p {
+    font-family: 'Averia Serif Libre', cursive;
+    font-size: 17px;
+    color: rgb(212, 212, 212);
+}
+
+.desc .place {
+    background: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Silkscreen', cursive;
+
+}
+
+.desc .descScenarios {
+    margin-top: 6%;
+}
+
+.desc .profileImage {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100px;
+    width: 150px;
+    border-radius: 15px;
+
+}
+
+.desc .voting {
+    margin-top: 4%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.desc .all {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+}
+
+.desc .nscenarios {
+    margin-top: 3%;
+    margin: 3%;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: 900;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.desc .pscenarios {
+    margin-top: 3%;
+    margin: 3%;
+    font-family: 'Pontano Sans', sans-serif;
+    font-weight: 900;
+    width: 50%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.desc .divScenarios {
+
+
+    margin: 4%;
+   margin-right: 12%;
+    color: rgb(161, 161, 161);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.desc h5 {
+    width: 30%;
+    font-size: 19px;
+}
+
+
+
+.desc .votes {
+    width: 20%;
+}
+
+.desc .heading {
+    margin-top: 10%;
+    text-align: center;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Silkscreen', cursive;
+
+}
+
+.desc h6 {
+    margin-top: 8%;
+    text-align: center;
+    font-family: 'Silkscreen', cursive;
+    font-size: 28px;
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.desc .headings {
+    margin-top: 6%;
+    text-align: center;
+    color: rgb(190, 190, 190);
+    font-family: 'Silkscreen', cursive;
+    font-size: 22px;
+
+}
+
+
+.head {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}

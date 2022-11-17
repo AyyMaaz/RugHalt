@@ -1,0 +1,26 @@
+.main .mainButton{
+    margin-top: 3%;
+      background: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+      -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      font-family: 'Silkscreen', cursive;
+      margin-bottom: 3%;
+      border: 1px solid rgb(126, 126, 126);
+      border-radius: 10px;
+      
+      
+      
+  }
+  .main .mainDiv{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0a0e1a;
+  
+  }
+  .main{
+    color: rgb(204, 199, 191);
+    font-family: 'Silkscreen', cursive;
+  
+  }

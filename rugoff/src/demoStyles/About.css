@@ -1,0 +1,13 @@
+.about{
+    background-color: #0a0e1a;
+    margin-top: 10%;
+ 
+}
+.about .accordian{
+    /* background: linear-gradient(-20deg, #00cdac 0%, #8ddad5 100%);
+    -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; */
+    font-family: 'Silkscreen', cursive;
+    background-color: #0a0e1a;
+
+}

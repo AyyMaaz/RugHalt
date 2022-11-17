@@ -1,0 +1,17 @@
+*{
+  background-color: #0a0e1a;
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:wght@300&family=Megrim&family=Pontano+Sans&family=Quicksand:wght@300&family=Rubik+Iso&family=Silkscreen&display=swap');
+body {
+  margin: 0;
+ 
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Silkscreen', cursive;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

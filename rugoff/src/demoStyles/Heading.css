@@ -1,0 +1,23 @@
+.heading {
+    margin-top: 6%;
+}
+
+.heading h1 {
+    background: linear-gradient(to right, #00b4db, #0083b0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Silkscreen', cursive;
+    font-size: 60px;
+}
+
+.heading p {
+
+    color: rgb(201, 201, 201);
+    font-size: 18px;
+    font-family: 'Averia Serif Libre', cursive;
+}
+
+.heading .button {
+    font-family: 'Silkscreen', cursive;
+    font-size: 18px;
+}
