@@ -62,6 +62,14 @@ function App() {
   const [profile, setProfile] = useState('')
 
   //
+  useEffect(()=>{
+
+    if(!ethereum){
+      alert('plz install metamask')
+
+
+    }
+  },[])
 
   //pinata
   const sendFileToIPFS = async (e) => {
@@ -143,35 +151,7 @@ function App() {
 
   }
 
-  useEffect(() => {
-
-
-    ethereum.on("chainChanged", async (chainId) => {
-      issetChain(true)
-      if (chainId === "0x5") {
-        setChain("Goerli")
-
-
-      }
-      if (chainId === "0x13881") {
-        setChain("Polygon")
-
-
-      }
-      else {
-        setChain('')
-      }
-
-
-    })
-
-    ethereum.on("accountsChanged", async (accounts) => {
-      setAddress(accounts[0])
-
-    })
-
-
-  }, [ethereum])
+ 
 
   //main 
   const FormHandler = (e) => {
@@ -318,7 +298,9 @@ function App() {
       <myApp.Provider value={{ AddNegativePosComment, id, setId, AddProjectPosComment, PositiveCommentHandler, positive, setPositive, loading, setloading, address, sendFileToIPFS, sendProfileToIPFS, profileHandler, profileurl, setProfileurl, imageHandler, Address, OwnerHandler, submitOwner, owner, setOwner, data, setData, form, setForm, FormHandler, submitProject, error, setError, ischain, issetChain, chain, setChain, address, setAddress, account, setAccount, connectWallet }}>
         <Router>
 
-          <Routes>
+{
+  ethereum?
+  <Routes>
             <Route
               path="/"
               element={<Home />}
@@ -340,11 +322,14 @@ function App() {
               path="/reveal/:id"
               element={<Reveal />}
             />
-
-
-
-
           </Routes>
+          :
+          <h1>plz install metamsk</h1>
+
+
+}
+
+     
 
         </Router>
       </myApp.Provider>

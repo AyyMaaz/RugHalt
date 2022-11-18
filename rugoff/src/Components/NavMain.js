@@ -5,10 +5,40 @@ import { useContext } from 'react';
 import { myApp } from '../App';
 import { Link } from 'react-router-dom';
 import { FaEthereum } from "react-icons/fa";
-
+import {useEffect} from 'react'
 
 function NavMain() {
+  const { ethereum } = window;
   const App = useContext(myApp)
+   useEffect(() => {
+
+
+    ethereum.on("chainChanged", async (chainId) => {
+      App.issetChain(true)
+      if (chainId === "0x5") {
+        App.setChain("Goerli")
+
+
+      }
+      if (chainId === "0x13881") {
+        App.setChain("Polygon")
+
+
+      }
+      else {
+        App.setChain('')
+      }
+
+
+    })
+
+    ethereum.on("accountsChanged", async (accounts) => {
+      App.setAddress(accounts[0])
+
+    })
+
+
+  }, [App.connectWallet])
 
   return (
     <Container>
